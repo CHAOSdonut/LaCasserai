@@ -1,0 +1,4 @@
+{
+  "dbName": "lacasseraiDB",
+  "jwtSecret": "lc_verySecretJWTcode"
+}
