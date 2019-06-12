@@ -1,0 +1,37 @@
+.home{
+    background-image: url('../img/atlantis_hotel_dubai-wallpaper-1920x1080.jpg');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.grid{
+    width: 95%;
+    margin-left: 5%;
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-columns: 50% 50%;
+}
+
+.homeContentWrapper{
+    background-color: white;
+    width: 80%;
+    padding: 2%;
+    margin-top: -0.2%;
+}
+
+.img{
+    display: block;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.midSection{
+    margin: 0 auto;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    width: 70%;
+}
