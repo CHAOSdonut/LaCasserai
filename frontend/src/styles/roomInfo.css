@@ -1,0 +1,13 @@
+.roominfo {
+    padding-left: 2%;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Table, Button } from 'reactstrap';
-import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Popup from "reactjs-popup";

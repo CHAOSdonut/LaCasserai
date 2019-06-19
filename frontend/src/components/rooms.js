@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import Rtable from './rTable';
 
 class Rooms extends Component {
     render() {
         return (
             <div className="rooms">
-                <p>rooms</p>
+                <p><h2>Our rooms: </h2></p>
+                <p><Rtable /></p>
             </div>
         )
     }

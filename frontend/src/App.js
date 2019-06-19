@@ -9,6 +9,7 @@ import Rooms from './components/rooms';
 import AdminHome from './components/adminComps/adminHome';
 import CreateRoom from './components/adminComps/createRoom';
 import AllRooms from './components/adminComps/allRooms';
+import RoomInfo from './components/roomInfo';
 import PrivateRoute from './components/privateRoute';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -29,6 +30,7 @@ function App(props) {
                 <Route exact path="/register" component={Register}/>
                 <Route exact path="/getUsers" component={getUserList}/>
                 <Route exact path="/rooms" component={Rooms}/>
+                <Route exact path="/roominfo" component={RoomInfo}/>
             </Router>
         </div>
     );
