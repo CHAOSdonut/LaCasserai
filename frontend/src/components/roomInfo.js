@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/roomInfo.css';
 import { Button } from 'reactstrap';
+import history from '../history';
 
 class RoomInfo extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class RoomInfo extends Component {
         return (
             <div className="roominfo">
                 <div className="left">
-                    <p><h2>welkom in kamer {this.state.room_nr}</h2></p>
+                    <h2><p>welkom in kamer {this.state.room_nr}</p></h2>
                     <p>Over deze kamer:<br/>{this.state.description}</p>
                 </div>
                 <div className="right">
@@ -22,12 +23,11 @@ class RoomInfo extends Component {
                         {this.state.facilities}
                     </p>
                     <p>Prijs:<br/>Deze kamer is beschikbaar voor &euro;{this.state.price} per nacht.</p>
-                    <p><Button color="primary" onClick={() => console.log('SendNudes')}>Boeken</Button></p>
+                    <p><Button color="primary" onClick={() => history.push('/bookroom', { room: this.props.location.state })}>Boeken</Button></p>
                 </div>
             </div>
         )
     }
-
 }
 
 export default RoomInfo;

@@ -10,8 +10,9 @@ class AdminHome extends React.Component {
         return (
             <div className="adminHome">
                 <h3>admin home</h3>
-                <Button color="primary" onClick={() => history.push('/admin/createroom')}>CreateRoom</Button>
-                <Button color="primary" onClick={() => history.push('/admin/getrooms')}>GetRooms</Button>
+                <p><Button color="primary" onClick={() => history.push('/admin/createroom')}>CreateRoom</Button></p>
+                <p><Button color="primary" onClick={() => history.push('/admin/getrooms')}>GetRooms</Button></p>
+                <p><Button color="primary" onClick={() => history.push('/admin/getreservations')}>GetReservations</Button></p>
             </div>
         )
     };

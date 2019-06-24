@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const users = require('./routes/userRoute');
 const rooms = require('./routes/roomRoute');
+const reservation = require('./routes/reservationRoute');
 const config = require('./config/default.json');
 
 const app =  express();
@@ -21,6 +22,7 @@ db.once('open', function() {
 // use routes
 app.use('/user', users);
 app.use('/room', rooms);
+app.use('/reservation', reservation);
 
 const port = process.env.PORT || 5000;
 
